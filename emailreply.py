@@ -1,16 +1,12 @@
 import os
 import streamlit as st
 
-import key
-
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.memory import ConversationBufferMemory
 
 st. set_page_config(layout="wide",page_title="EmailGPT 📧",page_icon ="📧")
-
-os.environ['OPENAI_API_KEY'] = key.getKey()
 
 
 st.markdown("<h1 style='text-align: center; color: black;'>Email Replier📧</h1>", unsafe_allow_html=True)
