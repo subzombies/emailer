@@ -32,7 +32,7 @@ context_template = PromptTemplate(
 memory = ConversationBufferMemory(input_key='hello',memory_key='chat_history')
 st.session_state.outp = ""
 #Llms
-llm = OpenAI(model_name = "gpt-4",temperature=0.532)
+llm = OpenAI(model_name = "gpt-4-0613",temperature=0.532)
 replier = LLMChain(llm=llm, prompt=context_template,memory=memory)
 
 
