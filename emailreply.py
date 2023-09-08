@@ -39,7 +39,7 @@ replier = LLMChain(llm=llm, prompt=context_template,memory=memory)
 with oup:
     
     if butt:
-        context = replier.run(hello=open("context.txt").read() + context_in ,mail=prompt)
+        context = replier.run(hello=open("rentalcontext.txt").read() + context_in ,mail=prompt)
         st.text_area(value=context,label="Result",height = 600) 
         
         
